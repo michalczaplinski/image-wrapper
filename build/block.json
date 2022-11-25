@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "my-block/image-wrapper",
+  "version": "0.1.0",
+  "title": "Image Wrapper",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Block that wraps an image with and disables its Image Dimensions controls.",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "allowResize": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "providesContext": {
+    "allowResize": "allowResize"
+  },
+  "textdomain": "image-wrapper",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
